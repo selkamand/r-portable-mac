@@ -1,29 +1,23 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+This repo is derived from: https://github.com/ColumbusCollaboratory/electron-quick-start which includes the file R-Portable-Mac/bin/R that tells R to use local paths  (incl. the local libraries).
+This is simply a version I updated to use R 4.0.0 instead of 3.X.X.
+
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+1. Clone into any directory and run R using r-portable-mac/bin/R
+2. Install any packages you want (will install to r-portable-mac/library)
 
-### Contribution guidelines ###
+#### Changing Version of R ####
+1. Backup r-portable-mac/bin/R
+2. Delete everything in repo
+3. Copy-Paste the Resources/ folder of any standard R installation into the r-portable-mac folder
+3. Replace r-portable-mac/bin/R with the backed up version (tells R to use local paths)
 
-* Writing tests
-* Code review
-* Other guidelines
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* Any questions can be sent to selkamand@ccia.org.au
