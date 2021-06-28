@@ -1,1 +1,43 @@
-bin/R
+#!/bin/sh
+# Shell wrapper for R executable.
+
+source_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+#STANDARD R PATH
+#R_HOME_DIR=/Library/Frameworks/R.framework/Resources
+
+
+#NEW
+R_HOME_DIR=${source_dir}
+R_HOME=${R_HOME_DIR}
+R_SHARE_DIR=${R_HOME_DIR}/share
+R_INCLUDE_DIR=${R_HOME_DIR}/include
+R_DOC_DIR=${R_HOME_DIR}/doc
+DYLD_LIBRARY_PATH=${R_HOME_DIR}/lib
+LD_LIBRARY_PATH=${R_HOME_DIR}/lib
+R_binary=${R_HOME_DIR}/bin/exec/R
+R_ENVIRON=${R_HOME_DIR}/etc/Renviron
+R_ENVIRON_USER=${R_HOME_DIR}/etc/Renviron
+
+export R_HOME_DIR
+export R_HOME
+export R_SHARE_DIR
+export R_INCLUDE_DIR
+export R_DOC_DIR
+export DYLD_LIBRARY_PATH
+export LD_LIBRARY_PATH
+export R_ENVIRON
+export R_ENVIRON_USER
+export R_PROFILE=''
+export R_PROFILE_USER=''
+
+
+echo "####### R_HOME_DIR ########"
+echo ${R_HOME_DIR}
+
+echo "####### R_binary ########"
+echo $R_binary
+
+echo "Running R_binary"
+
+$R_binary
