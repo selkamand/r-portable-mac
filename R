@@ -18,6 +18,7 @@ LD_LIBRARY_PATH=${R_HOME_DIR}/lib
 R_binary=${R_HOME_DIR}/bin/exec/R
 R_ENVIRON=${R_HOME_DIR}/etc/Renviron
 R_ENVIRON_USER=${R_HOME_DIR}/etc/Renviron
+EDITOR=nano
 
 export R_HOME_DIR
 export R_HOME
@@ -30,7 +31,7 @@ export R_ENVIRON
 export R_ENVIRON_USER
 export R_PROFILE=''
 export R_PROFILE_USER=''
-
+export EDITOR
 
 echo "####### R_HOME_DIR ########"
 echo ${R_HOME_DIR}
