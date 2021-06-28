@@ -40,5 +40,5 @@ echo "####### R_binary ########"
 echo $R_binary
 
 echo "Running R_binary"
-
-$R_binary
+echo "$R_binary $@"
+$R_binary $@
