@@ -31,6 +31,7 @@ export R_ENVIRON
 export R_ENVIRON_USER
 export R_PROFILE=''
 export R_PROFILE_USER=''
+export R_BROWSER="/usr/bin/open"
 export EDITOR
 
 echo "####### R_HOME_DIR ########"
