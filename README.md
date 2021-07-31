@@ -5,8 +5,8 @@ This software works on Catalina. It will not work if using Big Sur.
 
 ### What is this repository for? ###
 
-This repo is derived from: https://github.com/ColumbusCollaboratory/electron-quick-start which includes the file R-Portable-Mac/bin/R that tells R to use local paths  (incl. the local libraries).
-This is simply a version I updated to use R 4.0.0 instead of 3.X.X.
+This repo is derived from: https://github.com/ColumbusCollaboratory/electron-quick-start. It R and its the dependencies + an R-Portable-Mac/bin/R script that tells R to use local paths  (incl. the local libraries)
+This is a version I updated to use R 4.0.0 instead of 3.X.X.
 
 
 ### How do I get set up? ###
